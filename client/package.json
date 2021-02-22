@@ -1,9 +1,10 @@
 {
-  "name": "react-employee-directory-client",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001",
   "dependencies": {
+    "axios": "^0.21.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -19,8 +20,12 @@
     "production": [
       ">0.2%",
       "not dead",
-      "not ie <= 11",
       "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   }
 }

@@ -25,6 +25,10 @@
   },
   "homepage": "https://github.com/snelson-seattle/React-Employee-Directory#readme",
   "dependencies": {
+    "concurrently": "^6.0.0",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
