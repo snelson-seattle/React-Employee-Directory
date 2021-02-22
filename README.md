@@ -10,7 +10,7 @@ The users will be able to view a list of employees, sort by last name, and filte
 Simulated Database access using https://randomuser.me
 
 #### Frontend
-React, Bootstrap, Fontawesome, HTML5, CSS3, Javascript
+React, Axios, Bootstrap, Fontawesome, HTML5, CSS3, Javascript
 
 ## User Story
 
