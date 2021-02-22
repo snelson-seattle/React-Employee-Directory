@@ -1,17 +1,24 @@
 {
   "name": "react-employee-directory",
   "version": "1.0.0",
-  "description": "",
+  "description": "Employee Directory using React.js",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "adminSeed": "node scripts/adminSeed.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/snelson-seattle/React-Employee-Directory.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Scott Nelson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/snelson-seattle/React-Employee-Directory/issues"
